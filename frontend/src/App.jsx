@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import api from "./api";
-import ivan from "./assets/o_homem.png";
 
 function App() {
   const [items, setItems] = useState([]);
@@ -25,8 +24,8 @@ function App() {
   };
 
   return (
-    <div style={{ backgroundImage: `url(${ivan})`, width: "500px", padding:'10px', borderRadius: "10px"}}>
-      <div style={{ backdropFilter: "blur(10px)" }}>
+    <div style={{ width: "500px", padding:'10px'}}>
+      <div style={{ backdropFilter: "blur(10px)", borderRadius: "10px", backgroundColor: "darkblue", padding: '10px'}}>
 
         <h2>Items</h2>
 
